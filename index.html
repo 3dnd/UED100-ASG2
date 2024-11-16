@@ -48,5 +48,33 @@
                 </div>
             </div>
         </aside>
+        
+        <!-- Main content area -->
+        <main>
+            <div class="files-header">
+                <h2>My Drive</h2>
+                <div class="view-options">
+                    <span class="material-icons">grid_view</span>
+                    <span class="material-icons">sort</span>
+                </div>
+            </div>
+            <div class="files-container" id="filesContainer"></div>
+        </main>
+    </div>
+
+    <!-- Modal for file upload -->
+    <div class="modal" id="uploadModal">
+        <div class="modal-content">
+            <h3>Upload File</h3>
+            <input type="file" id="fileInput">
+            <div class="modal-buttons">
+                <button onclick="closeModal()">Cancel</button>
+                <button onclick="uploadFile()">Upload</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="main.js"></script>
 </body>
 </html>
